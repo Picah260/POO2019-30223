@@ -1,0 +1,85 @@
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Frame;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class Graphis {
+	public static void main(String[] args) {
+		int dimension=30;
+		JFrame frame = new JFrame("Jocul Lui Nim");
+		frame.setSize(600, 600);
+		JPanel panel = new JPanel();
+		frame.add(panel);
+		JButton buton = new JButton("New Game");
+		buton.setBackground(Color.green);
+		buton.setLocation(100, 100);
+		panel.setLayout(null);
+		buton.setBounds(40, 500, 100, 30);
+		panel.add(buton);
+		JButton b1 = new JButton();
+		b1.setBounds(10, 300, 30, 30);
+		panel.add(b1);
+		b1.addActionListener(new DissapearActionListener());
+		JButton b2 = new JButton();
+		b2.setBounds(40, 300, 30, 30);
+		b2.addActionListener(new DissapearActionListener());
+		panel.add(b2);
+		JButton b3 = new JButton();
+		b3.setBounds(40, 270, 30, 30);
+		b3.addActionListener(new DissapearActionListener());
+		panel.add(b3);
+		JButton b4 = new JButton();
+		b4.setBounds(70, 300, 30, 30);
+		b4.addActionListener(new DissapearActionListener());
+		panel.add(b4);
+		JButton b5 = new JButton();
+		b5.setBounds(70, 270, 30, 30);
+		b5.addActionListener(new DissapearActionListener());
+		panel.add(b5);
+		JButton b6 = new JButton();
+		b6.setBounds(70, 240, 30, 30);
+		b6.addActionListener(new DissapearActionListener());
+		panel.add(b6);
+		JButton b7 = new JButton();
+		b7.setBounds(100, 300, 30, 30);
+		panel.add(b7);
+		b7.addActionListener(new DissapearActionListener());
+		JButton b8 = new JButton();
+		b8.setBounds(100, 270, 30, 30);
+		panel.add(b8);
+		b8.addActionListener(new DissapearActionListener());
+		JButton b9 = new JButton();
+		b9.setBounds(100, 240, 30, 30);
+		panel.add(b9);
+		b9.addActionListener(new DissapearActionListener());
+		JButton b10 = new JButton();
+		b10.setBounds(100, 210, 30, 30);
+		panel.add(b10);
+		b10.addActionListener(new DissapearActionListener());
+		JButton b11 = new JButton();
+		b11.setBounds(130, 300, 30, 30);
+		panel.add(b11);
+		b11.addActionListener(new DissapearActionListener());
+		JButton b12 = new JButton();
+		b12.setBounds(130, 270, 30, 30);
+		panel.add(b12);
+		b12.addActionListener(new DissapearActionListener());
+		JButton b13 = new JButton();
+		b13.setBounds(130, 240, 30, 30);
+		panel.add(b13);
+		b13.addActionListener(new DissapearActionListener());
+		JButton b14 = new JButton();
+		b14.setBounds(130, 210, 30, 30);
+		panel.add(b14);
+		b14.addActionListener(new DissapearActionListener());
+		JButton b15 = new JButton();
+		b15.setBounds(130, 180, 30, 30);
+		panel.add(b15);
+		b15.addActionListener(new DissapearActionListener());
+		frame.setVisible(true);
+
+	}
+
+}
