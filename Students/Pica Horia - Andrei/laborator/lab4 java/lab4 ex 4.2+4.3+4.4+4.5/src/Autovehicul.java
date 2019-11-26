@@ -93,25 +93,26 @@ public class Autovehicul {
 		viteza_curenta = 0;
 		treapta_viteza_curenta = 1;
 	}
-	public static void drum(Autovehicul masina)
+	public void drum()
 	{
 		System.out.println();
-		masina.opreste_motorul();
-		masina.acelereaza(180);
-		masina.schimba_treapta(6);
-		System.out.println("Viteza dupa acelerare este : ="+masina.getViteza()+"km/h");
-		masina.pune_frana(100);
-		masina.schimba_treapta(3);
-		System.out.println("Viteza dupa decelerare este : ="+masina.getViteza()+"km/h");
+		opreste_motorul();
+		acelereaza(180);
+		schimba_treapta(6);
+		System.out.println("Viteza dupa acelerare este : ="+getViteza()+"km/h");
+		pune_frana(100);
+		schimba_treapta(3);
+		System.out.println("Viteza dupa decelerare este : ="+getViteza()+"km/h");
 
-		System.out.println("Treapta de viteza este : ="+masina.gettreapta());
-		masina.opreste_motorul();
-		System.out.println("Viteza dupa oprire este : ="+masina.getViteza()+"km/h");
+		System.out.println("Treapta de viteza este : ="+gettreapta());
+		opreste_motorul();
+		System.out.println("Viteza dupa oprire este : ="+getViteza()+"km/h");
 		
 	}
 
 	public static void main(String[] args) {
 	Autovehicul masina=new Autovehicul();
+        masina.drum();
 	System.out.println("Marca masina este : = "+masina.getMarca());
 	System.out.println("Masina este in treapta : = "+ masina.gettreapta());
 	System.out.println("Viteza curenta este  : ="+ masina.getViteza()+"km/h");
